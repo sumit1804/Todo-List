@@ -1,32 +1,40 @@
 # Installation
-Go to ```frontend``` and ```backend``` directory to install packages
+
+Go to `frontend` and `backend` directory to install packages
+
 ```
 cd frontend
 npm install
 ```
+
 ```
 cd backend
 npm install
 ```
+
 # Configuration
-Create ```.env``` file inside ```backend``` directory and copy the following code
+
+Create `.env` file inside `backend` directory and copy the following code
 
 ```
 MONGO_URI=Your mongodb URI
-GMAIL_USERNAME=your gmail address 
+GMAIL_USERNAME=your gmail address
 GMAIL_PASSWORD=password created inside 'App Password' section under google accounts setting
 PORT=8000
 JWT_SECRET=a random secret key
+FRONTEND_URL=http://localhost:3000
 ```
+
 # Run the App
-Go to ```backend``` and ```frontend``` directory and start the server
+
+Go to `backend` and `frontend` directory and start the server
+
 ```
 cd backend
 nodemon server
 ```
+
 ```
 cd frontend
 npm start
 ```
-
-
