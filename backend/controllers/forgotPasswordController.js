@@ -21,7 +21,7 @@ const forgotPassword = async (req, res) => {
   await user.save();
 
   //Send email with reset token
-  const resetUrl = `https://todo-app-b96a5.web.app/resetPassword?token=${resetToken}`;
+  const resetUrl = `${process.env.FRONTEND_URL}=${resetToken}`;
   var transporter = createTransport({
     service: "gmail",
     host: "smtp.gmail.com",
